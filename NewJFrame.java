@@ -239,10 +239,11 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addComponent(jLabel3))
                     .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnEXIT)
-                    .addComponent(jLabel4)
-                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnEXIT)
+                        .addComponent(jLabel4)))
                 .addContainerGap(19, Short.MAX_VALUE))
         );
 
@@ -289,7 +290,7 @@ public class NewJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         double  total;
         double subtotal=0;
-        final double TAXRATE= .1;
+        final double TAXRATE= .01;
         double tax;
         double quantity=1;
         
@@ -336,6 +337,17 @@ public class NewJFrame extends javax.swing.JFrame {
         radCOFFEE.setSelected(false);
         radCAP.setSelected(false);
         radTEA.setSelected(false);
+        chkBAG.setSelected(false);
+        chkCRO.setSelected(false);
+        chkTOA.setSelected(false);
+        txtTot.setText("");
+        txtSub.setText("");
+        txtTax.setText("");
+        txtQua1.setText("");
+        txtQua2.setText("");
+        txtQua3.setText("");
+        
+        
         
         
         
